@@ -310,7 +310,8 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_gravity="bottom"
-            app:backgroundTint="@color/white">
+            app:backgroundTint="@color/white"
+            tools:ignore="BottomAppBar">
 
 
 
