@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registar_usuario02"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Nombre"
+        app:startIconDrawable="@drawable/iconoss"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
+        app:helperText="*Ingresar nombre valido"
+        app:helperTextTextColor="@color/rojo"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Contraseña"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Contraseña"
+        app:startIconDrawable="@drawable/clock"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
+        app:helperText="*Ingresar contraseña valid"
+        app:helperTextTextColor="@color/rojo"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="25"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        app:cornerRadius="5dp"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+
+
+</LinearLayout>
