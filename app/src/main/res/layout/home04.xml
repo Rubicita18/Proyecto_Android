@@ -45,7 +45,7 @@
                         android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
+                        android:layout_marginStart="32sp"
                         android:text="Hola,NombreUsuario"
                         android:textColor="@color/white"
                         android:textSize="20sp"
@@ -69,8 +69,8 @@
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32sp"
+                    android:layout_marginTop="32sp"
                     android:text=" Encuentra tus \n Productos favoritos"
                     android:textColor="@color/white"
                     android:textSize="30sp"
@@ -297,7 +297,9 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -305,137 +307,37 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent">
 
-        <com.google.android.material.bottomappbar.BottomAppBar
-            android:id="@+id/app_bar"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_gravity="bottom"
-            app:backgroundTint="@color/white"
-            tools:ignore="BottomAppBar">
+            android:layout_height="match_parent">
 
 
+        </com.google.android.material.appbar.AppBarLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:menu="@menu/bottom_nav_menu"
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.25"
-                    android:orientation="vertical">
+            >
 
-                    <ImageView
-                        android:id="@+id/imageView7442"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        android:src="@drawable/bottom_btn1" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Home"
-                        android:textAlignment="center" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.25"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView744"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        android:src="@drawable/bottom_btn1" />
-
-                    <TextView
-                        android:id="@+id/textView413"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Home"
-                        android:textAlignment="center" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.25"
-                    android:orientation="vertical"
-                    android:visibility="visible">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="197dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:elevation="4dp"
-
-                        android:foregroundGravity="bottom"
-                        android:src="@drawable/float_icon"
-                        app:backgroundTint="@color/white"
-                        app:fabCradleMargin="8dp"
-                        app:fabCradleRoundedCornerRadius="50dp"
-                        app:fabCradleVerticalOffset="6dp">
-
-                    </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.25"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView17"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        android:src="@drawable/bottom_btn1" />
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Home"
-                        android:textAlignment="center" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.25"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageView72"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="8dp"
-                        android:src="@drawable/bottom_btn4" />
-
-                    <TextView
-                        android:id="@+id/textView42"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Ajustes"
-                        android:textAlignment="center" />
-                </LinearLayout>
-            </LinearLayout>
-        </com.google.android.material.bottomappbar.BottomAppBar>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/float_icon"
+            app:layout_anchor="@+id/bottom_navigation"
+            app:layout_anchorGravity="center"
 
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
