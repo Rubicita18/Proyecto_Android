@@ -6,4 +6,22 @@
     </style>
 
     <style name="Theme.Usuario03" parent="Base.Theme.Usuario03" />
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="Base.Theme.Usuario03" >
+
+        <!-- Color de la superficie principal del BottomNavigationView -->
+        <item name="colorSurface">@color/dark_blue</item>
+        <!-- texto y iconos deshabilitados) -->
+        <item name="colorOnSurfaceVariant">@color/black</item>
+        <!-- Color texto activo -->
+        <item name="colorOnSurface">@color/dark_blue</item>
+
+        <item name="colorSecondaryContainer">@color/dark_blue</item>
+        <!--icono activo -->
+        <item name="colorOnSecondaryContainer">@color/black</item>
+
+
+
+    </style>
+
 </resources>
