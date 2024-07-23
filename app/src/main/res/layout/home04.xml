@@ -10,15 +10,17 @@
     tools:context=".home04">
 
     <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/contenedor"/>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="183dp" />
 
     <FrameLayout
         android:id="@+id/fragmentP"
-        android:layout_width="412dp"
-        android:layout_height="582dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="260dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="16dp"
         android:background="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -29,9 +31,10 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.appbar.AppBarLayout
