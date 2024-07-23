@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".carrusel05"
+            android:name=".Perfil03"
             android:exported="false" />
         <activity
             android:name=".Perfil03"
