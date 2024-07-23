@@ -22,7 +22,7 @@ object BaseDeDatos {
                 Producto(
                     id = 1,
                     nombre = "Laptop Gamer XYZ",
-                    imagen = "https://example.com/imagenes/laptop_gamer_xyz.webp",
+                    imagen = "/drawable/imagen1_slider.jpg",
                     descripcion = "Laptop potente con gráficos de última generación.",
                     precio = 1200.0,
                     video = "https://example.com/videos/laptop_gamer_xyz_video"
@@ -30,7 +30,7 @@ object BaseDeDatos {
                 Producto(
                     id = 2,
                     nombre = "Laptop Ultrabook ABC",
-                    imagen = "https://example.com/imagenes/laptop_ultrabook_abc.webp",
+                    imagen = "/drawable/imagen2_slider.jpg",
                     descripcion = "Ultrabook liviano y elegante con batería de larga duración.",
                     precio = 900.0,
                     video = "https://example.com/videos/laptop_ultrabook_abc_video"
